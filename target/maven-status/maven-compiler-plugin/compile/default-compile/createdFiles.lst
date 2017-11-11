@@ -1,3 +1,6 @@
-model\enity\SynchronizeEntity.class
+model\entity\Currency.class
+controllers\CurrencyController.class
+model\dao\CurrencyDAO.class
+model\repository\CurrencyRepository.class
+model\entity\Synchronize.class
 com\example\currency\CurrencyApplication.class
-model\enity\CurrencyEntity.class

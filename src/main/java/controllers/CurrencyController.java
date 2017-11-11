@@ -24,7 +24,7 @@ public class CurrencyController {
 
     @GetMapping("/currency/{id}")
     public String getCurrency(@PathVariable Integer id){
-        return currencyDAO.getCurrencyById(id).getName();
+        return currencyDAO.getCurrencyById(id);
     }
 
     @GetMapping("/all")
