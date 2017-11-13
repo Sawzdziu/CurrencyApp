@@ -1,4 +1,4 @@
-package com.example.currency;
+package currencyMain;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

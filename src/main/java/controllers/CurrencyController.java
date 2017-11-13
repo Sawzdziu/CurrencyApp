@@ -53,7 +53,7 @@ public class CurrencyController {
     }
 
     @PostMapping("/calculate")
-    @ApiOperation(value = "Calculate converter for three currencies PLN/USD/EUR", response = Double.class)
+    @ApiOperation(value = "Calculate converter for three currencies PLN/USD/EUR(http://www.nbp.pl/home.aspx?f=/kursy/kursya.html)", response = Double.class)
     public Double getCalculation(@RequestBody CalculationDto calculationDto, BindingResult bindingResult) throws BindException {
 
         calculationDtoValidator.validate(calculationDto, bindingResult);
