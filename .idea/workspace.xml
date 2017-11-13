@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab34cb34-39fa-4d1e-b5b2-19c684a5e52e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/calculation/StatisticService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/dto/StatisticDto.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/rest/mappings/PeriodCurrency.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/rest/mappings/Rates.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/index.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/rest/mappings/CurrencyDateJSON.java" afterPath="$PROJECT_DIR$/src/main/java/rest/mappings/CurrencyDateJson.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/rest/mappings/CurrencyJSON.java" afterPath="$PROJECT_DIR$/src/main/java/rest/mappings/CurrencyItemJson.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/calculation/CalculateService.java" afterPath="$PROJECT_DIR$/src/main/java/calculation/CalculateService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/controllers/CurrencyController.java" afterPath="$PROJECT_DIR$/src/main/java/controllers/CurrencyController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rest/mappings/Table.java" afterPath="$PROJECT_DIR$/src/main/java/rest/mappings/Table.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rest/service/clients/AverageRateFromDateClient.java" afterPath="$PROJECT_DIR$/src/main/java/rest/service/clients/AverageRateFromDateClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/rest/service/clients/DateParameterClient.java" afterPath="$PROJECT_DIR$/src/main/java/rest/service/clients/DateParameterClient.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/synchronization/resolver/SyncService.java" afterPath="$PROJECT_DIR$/src/main/java/synchronization/resolver/SyncService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/example/currency/CurrencyApplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/example/currency/CurrencyApplication.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -40,18 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Synchronization.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/synchronization/Synchronization.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CurrencyController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controllers/CurrencyController.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -65,23 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AbstractClient.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/rest/service/AbstractClient.java">
+      <file leaf-file-name="CurrencyApplication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/example/currency/CurrencyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StatisticService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/calculation/StatisticService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="517">
+              <caret line="45" column="109" lean-forward="false" selection-start-line="45" selection-start-column="109" selection-end-line="45" selection-end-column="109" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,13 +134,13 @@
         <option value="$PROJECT_DIR$/src/main/java/controllers/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/example/currency/CurrencyApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/rest/mappings/PeriodCurrency.java" />
         <option value="$PROJECT_DIR$/src/main/java/rest/mappings/CurrencyDateJson.java" />
         <option value="$PROJECT_DIR$/src/main/java/dto/StatisticDto.java" />
         <option value="$PROJECT_DIR$/src/main/java/controllers/CurrencyController.java" />
         <option value="$PROJECT_DIR$/src/main/java/rest/service/clients/DateParameterClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/calculation/StatisticService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/example/currency/CurrencyApplication.java" />
       </list>
     </option>
   </component>
@@ -526,12 +488,12 @@
       <workItem from="1510422850140" duration="1386000" />
       <workItem from="1510424271666" duration="1768000" />
       <workItem from="1510426111390" duration="7192000" />
-      <workItem from="1510506563459" duration="20403000" />
+      <workItem from="1510506563459" duration="20679000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51681000" />
+    <option name="totallyTimeSpent" value="51957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1066" extended-state="6" />
@@ -891,16 +853,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/currency/CurrencyApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="657">
-          <caret line="53" column="61" lean-forward="false" selection-start-line="53" selection-start-column="61" selection-end-line="53" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
@@ -1008,17 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/CurrencyController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="678">
-          <caret line="49" column="63" lean-forward="false" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#923#924#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/rest/service/AbstractClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -1061,6 +1002,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="20" column="14" lean-forward="true" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controllers/CurrencyController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="678">
+          <caret line="49" column="63" lean-forward="false" selection-start-line="49" selection-start-column="63" selection-end-line="49" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#923#924#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/example/currency/CurrencyApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="517">
+          <caret line="45" column="109" lean-forward="false" selection-start-line="45" selection-start-column="109" selection-end-line="45" selection-end-column="109" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

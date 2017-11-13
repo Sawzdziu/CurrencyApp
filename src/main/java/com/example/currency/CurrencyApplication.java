@@ -42,8 +42,8 @@ public class CurrencyApplication extends WebMvcConfigurerAdapter{
 
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
-				.title("Spring REST Sample with Swagger")
-				.description("Spring REST Sample with Swagger")
+				.title("Currency app with Swagger")
+				.description("Currency app with Swagger. Provides simple converting and statistic information")
 				.contact("Piotr Sawzdargo")
 				.version("2.0")
 				.build();
