@@ -30,6 +30,6 @@ public abstract class AbstractClient<T> {
     }
 
     public T sendRequest(String... vars){
-        return restEngine.getRestTemplate().exchange(apiPath, HttpMethod.GET, HttpEntity.EMPTY, responseClass, vars).getBody();
+        return restEngine.getRestTemplate().exchange(apiPath, HttpMethod.GET, httpEntity, responseClass, vars).getBody();
     }
 }

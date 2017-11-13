@@ -41,9 +41,7 @@ public class Currency implements Serializable{
         Currency currency = (Currency) o;
 
         if (id != currency.id) return false;
-        if (name != null ? !name.equals(currency.name) : currency.name != null) return false;
-
-        return true;
+        return name != null ? name.equals(currency.name) : currency.name == null;
     }
 
     @Override

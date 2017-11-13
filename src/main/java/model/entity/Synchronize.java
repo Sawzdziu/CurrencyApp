@@ -75,9 +75,7 @@ public class Synchronize implements Serializable{
         if (id != that.id) return false;
         if (currencyId != that.currencyId) return false;
         if (Double.compare(that.value, value) != 0) return false;
-        if (date != null ? !date.equals(that.date) : that.date != null) return false;
-
-        return true;
+        return date != null ? date.equals(that.date) : that.date == null;
     }
 
     @Override

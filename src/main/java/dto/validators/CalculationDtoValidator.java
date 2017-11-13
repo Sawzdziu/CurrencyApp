@@ -27,13 +27,13 @@ public class CalculationDtoValidator implements Validator {
 
         if (calculationDto == null)
             errors.reject("nullObject", "There's no body!");
-        if (errors.hasErrors() == false)
+        if (!errors.hasErrors())
             ValidationUtils.rejectIfEmpty(errors, "value", "value.empty", "Value field is empty!");
-        if (errors.hasErrors() == false)
+        if (!errors.hasErrors())
             ValidationUtils.rejectIfEmptyOrWhitespace(errors, "fromCurrency", "fromCurrency.empty", "fromCurrency field is empty!");
-        if (errors.hasErrors() == false)
+        if (!errors.hasErrors())
             ValidationUtils.rejectIfEmptyOrWhitespace(errors, "toCurrency", "toCurrency.empty", "toCurrency field is empty!");
-        if (errors.hasErrors() == false)
+        if (!errors.hasErrors())
             validateCurrencies(calculationDto, errors);
     }
 
