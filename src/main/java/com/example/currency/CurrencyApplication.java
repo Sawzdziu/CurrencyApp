@@ -19,7 +19,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 import static springfox.documentation.builders.PathSelectors.regex;
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"controllers", "model", "rest", "synchronization", "calculation"})
+@ComponentScan(basePackages = {"controllers", "model", "rest", "synchronization", "calculation", "dto"})
 @EnableJpaRepositories("model.repository")
 @EntityScan("model.entity")
 @EnableScheduling
