@@ -5,10 +5,10 @@ import lombok.Data;
 import java.util.List;
 
 @Data
-public class CurrencyDateJSON {
+public class CurrencyDateJson {
 
     private String table;
     private String currency;
     private String code;
-    private List<CurrencyJSON> rates;
+    private List<CurrencyItemJson> rates;
 }

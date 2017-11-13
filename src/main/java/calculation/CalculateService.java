@@ -3,8 +3,7 @@ package calculation;
 import dto.CalculationDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.HttpClientErrorException;
-import rest.mappings.CurrencyDateJSON;
+import rest.mappings.CurrencyDateJson;
 import rest.service.clients.AverageRateFromDateClient;
 import synchronization.resolver.CurrencyEnum;
 
@@ -20,14 +19,14 @@ public class CalculateService {
 
     public Double calculate(CalculationDto calculationDto) {
         if (calculationDto.getFromCurrency().toUpperCase().equals(CurrencyEnum.PLN.toString())) {
-            CurrencyDateJSON currencyDateJSON = getCurrencyToRates(calculationDto);
-            return calculationDto.getValue() / getMidValue(currencyDateJSON);
+            CurrencyDateJson currencyDateJson = getCurrencyToRates(calculationDto);
+            return calculationDto.getValue() / getMidValue(currencyDateJson);
         } else if (calculationDto.getToCurrency().toUpperCase().equals(CurrencyEnum.PLN.toString())) {
-            CurrencyDateJSON currencyDateJSON = getCurrencyFromRates(calculationDto);
-            return calculationDto.getValue() * getMidValue(currencyDateJSON);
+            CurrencyDateJson currencyDateJson = getCurrencyFromRates(calculationDto);
+            return calculationDto.getValue() * getMidValue(currencyDateJson);
         } else {
-            CurrencyDateJSON currencyDateFrom = getCurrencyFromRates(calculationDto);
-            CurrencyDateJSON currencyDateTo = getCurrencyToRates(calculationDto);
+            CurrencyDateJson currencyDateFrom = getCurrencyFromRates(calculationDto);
+            CurrencyDateJson currencyDateTo = getCurrencyToRates(calculationDto);
             return calculationDto.getValue() * (getMidValue(currencyDateFrom) / getMidValue(currencyDateTo));
         }
     }
@@ -36,15 +35,15 @@ public class CalculateService {
         return LocalDate.parse(new SimpleDateFormat("yyyy-MM-dd").format(date)).toString();
     }
 
-    private CurrencyDateJSON getCurrencyToRates(CalculationDto calculationDto) {
+    private CurrencyDateJson getCurrencyToRates(CalculationDto calculationDto) {
         return averageRateFromDateClient.sendRequest(calculationDto.getToCurrency(), resolveDate(calculationDto.getDate()));
     }
 
-    private CurrencyDateJSON getCurrencyFromRates(CalculationDto calculationDto) {
+    private CurrencyDateJson getCurrencyFromRates(CalculationDto calculationDto) {
         return averageRateFromDateClient.sendRequest(calculationDto.getFromCurrency(), resolveDate(calculationDto.getDate()));
     }
 
-    private Double getMidValue(CurrencyDateJSON currencyDateJSON) {
-        return currencyDateJSON.getRates().get(0).getMid();
+    private Double getMidValue(CurrencyDateJson currencyDateJson) {
+        return currencyDateJson.getRates().get(0).getMid();
     }
 }

@@ -7,7 +7,7 @@ import model.entity.Currency;
 import model.entity.Synchronize;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import rest.mappings.CurrencyJSON;
+import rest.mappings.CurrencyItemJson;
 import rest.mappings.Table;
 import rest.service.clients.CurrencyTableClient;
 
@@ -36,8 +36,8 @@ public class SyncService {
         parseCurrencyTable(table[0].getRates(), new Date(table[0].getEffectiveDate().getTime()));
     }
 
-    private void parseCurrencyTable(List<CurrencyJSON> currencyJSON, Date date) {
-        for (CurrencyJSON item : currencyJSON) {
+    private void parseCurrencyTable(List<CurrencyItemJson> currencyItemJson, Date date) {
+        for (CurrencyItemJson item : currencyItemJson) {
             for (CurrencyEnum currencyEnum : CurrencyEnum.values()) {
                 if (item.getCode().equals(currencyEnum.toString())) {
                     save(item, date);
@@ -46,10 +46,10 @@ public class SyncService {
         }
     }
 
-    private void save(CurrencyJSON currencyJSON, Date date) {
+    private void save(CurrencyItemJson currencyItemJson, Date date) {
         Synchronize synchronize = new Synchronize();
-        synchronize.setCurrencyByCurrencyId(getCurrency(currencyJSON.getCode()));
-        synchronize.setValue(currencyJSON.getMid());
+        synchronize.setCurrencyByCurrencyId(getCurrency(currencyItemJson.getCode()));
+        synchronize.setValue(currencyItemJson.getMid());
         synchronize.setDate(date);
         synchronizeDAO.save(synchronize);
     }

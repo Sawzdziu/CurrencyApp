@@ -15,5 +15,5 @@ public class Table {
     private String table;
     private String no;
     private Date effectiveDate;
-    private List<CurrencyJSON> rates;
+    private List<CurrencyItemJson> rates;
 }
