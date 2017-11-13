@@ -19,9 +19,10 @@ public class CurrencyDAO {
         return currencyRepository.findOne(id).isPresent() ? currencyRepository.findOne(id).get().getName() : "There's no currency with given id!";
     }
 
+
     @Transactional
-    public String getCurrencyByName(String name){
-        return currencyRepository.findByName(name).isPresent() ? currencyRepository.findByName(name).get().getName() : "There's no currency with given name!";
+    public Currency getCurrencyByName(String name){
+        return currencyRepository.findByName(name).isPresent() ? currencyRepository.findByName(name).get() : null;
     }
 
     @Transactional

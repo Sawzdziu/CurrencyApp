@@ -6,7 +6,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 
-public class AbstractClient<T> {
+public abstract class AbstractClient<T> {
 
     @Autowired
     private RestEngine restEngine;
@@ -29,7 +29,7 @@ public class AbstractClient<T> {
         return new HttpEntity<>(headers);
     }
 
-    public T sendRequest(){
-        return restEngine.getRestTemplate().exchange(apiPath, HttpMethod.GET, HttpEntity.EMPTY, responseClass).getBody();
+    public T sendRequest(String... vars){
+        return restEngine.getRestTemplate().exchange(apiPath, HttpMethod.GET, HttpEntity.EMPTY, responseClass, vars).getBody();
     }
 }

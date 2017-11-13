@@ -25,7 +25,8 @@ public class Synchronize implements Serializable{
     }
 
     @Id
-    @Column(name = "ID")
+    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public int getId() {
         return id;
     }
@@ -35,7 +36,7 @@ public class Synchronize implements Serializable{
     }
 
     @Basic
-    @Column(name = "CURRENCY_ID", insertable = false, updatable = false)
+    @Column(name = "currency_id", insertable = false, updatable = false)
     public int getCurrencyId() {
         return currencyId;
     }
@@ -45,7 +46,7 @@ public class Synchronize implements Serializable{
     }
 
     @Basic
-    @Column(name = "VALUE")
+    @Column(name = "value")
     public double getValue() {
         return value;
     }
@@ -55,7 +56,7 @@ public class Synchronize implements Serializable{
     }
 
     @Basic
-    @Column(name = "DATE")
+    @Column(name = "date")
     public Date getDate() {
         return date;
     }

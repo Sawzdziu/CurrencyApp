@@ -3,7 +3,7 @@ package rest.mappings;
 import lombok.Data;
 
 @Data
-public class Currency{
+public class CurrencyJSON {
 
     private String currency;
     private String code;

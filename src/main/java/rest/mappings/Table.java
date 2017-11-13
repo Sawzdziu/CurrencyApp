@@ -10,10 +10,10 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class TableA {
+public class Table {
 
     private String table;
     private String no;
     private Date effectiveDate;
-    private List<Currency> rates;
+    private List<CurrencyJSON> rates;
 }
